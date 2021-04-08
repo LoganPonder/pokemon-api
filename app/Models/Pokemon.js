@@ -36,7 +36,7 @@ export default class Pokemon {
     get Type() {
         let template = '';
         console.log(this.types)
-        this.types.forEach(t => template += t.type.name);
+        this.types.forEach(t => template += `| ${t.type.name} `);
         return template;
     }
 }
